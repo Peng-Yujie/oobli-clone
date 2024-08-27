@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
+  --font-body-family: "Roobert", sans-serif;
+  --font-heading-family: "Lalezar", cursive;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +34,17 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading-family);
+}
+
+button {
+  font-family: var(--font-heading-family);
 }
