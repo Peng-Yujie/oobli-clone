@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
+    "@popperjs/core": "^2.11.8",
+    "@preline/dropdown": "^2.4.1",
     "date-fns": "^3.6.0",
     "framer-motion": "^11.3.30",
     "next": "^14.2.6",

@@ -4,12 +4,12 @@ export default function Button({ text, href = "/#" }) {
   return (
     <button>
       <Link
-        class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-300 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-blue-950 text-lg font-medium rounded-full focus:outline-none focus:shadow-blue-700/50 py-3 px-6 transition duration-300"
+        className="inline-flex justify-center items-center gap-x-3 text-center bg-blue-300 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-blue-950 text-lg font-medium rounded-full focus:outline-none focus:shadow-blue-700/50 py-3 px-6 transition duration-300"
         href={href}
       >
         {text}
         <svg
-          class="shrink-0 size-4"
+          className="shrink-0 size-4"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"

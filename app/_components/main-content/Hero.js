@@ -1,98 +1,128 @@
 import Image from "next/image";
 import Button from "./Button";
-import cocoa from "@/public/hero-product.png";
+import heroProduct from "@/public/hero-product.png";
 
 export default function Hero() {
   return (
     <section className="w-full bg-blue-950 min-h-[1100px] relative">
-      <div class="mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
-        <div class="text-center mx-auto">
-          <h1 class="block font-medium text-gray-200 text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
+        <div className="text-center mx-auto">
+          <h1 className="block font-medium text-gray-200 text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
             MEET THE WORLD'S
             <br />
             BEST SWEETS
           </h1>
         </div>
 
-        <div class="text-center">
+        <div className="text-center">
           <Button text="Try Oobli" />
         </div>
 
-        <div class="grid grid-cols-3 items-center gap-12 mx-auto max-w-2xl">
-          <div class="text-center">
-            <div class="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto">
+        <div className="grid grid-cols-3 items-center gap-12 mx-auto max-w-2xl">
+          <div className="text-center">
+            <div className="flex justify-center items-center size-18 mx-auto">
               <svg
-                class="shrink-0 size-5 text-gray-600"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
+                width="76"
+                height="75"
+                viewBox="0 0 76 75"
                 fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <rect width="10" height="14" x="3" y="8" rx="2" />
-                <path d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4" />
-                <path d="M8 18h.01" />
+                <path
+                  d="M25.2623 49.7122H23.0544C23.0544 52.7567 20.5767 55.2343 17.5322 55.2343V57.4423C20.5767 57.4423 23.0544 59.9199 23.0544 62.9644H25.2623C25.2623 59.9199 27.74 57.4423 30.7845 57.4423V55.2343C27.74 55.2343 25.2623 52.7567 25.2623 49.7122ZM24.1607 59.0057C23.5024 57.9131 22.5881 56.9943 21.4956 56.3406C22.5881 55.6823 23.507 54.768 24.1607 53.6755C24.8189 54.768 25.7332 55.6869 26.8257 56.3406C25.7332 56.9989 24.8144 57.9131 24.1607 59.0057Z"
+                  fill="#FFEFEC"
+                ></path>
+                <path
+                  d="M36.7282 16.4194C37.6725 16.4194 38.4379 15.6539 38.4379 14.7097C38.4379 13.7654 37.6725 13 36.7282 13C35.784 13 35.0186 13.7654 35.0186 14.7097C35.0186 15.6539 35.784 16.4194 36.7282 16.4194Z"
+                  fill="#FFEFEC"
+                ></path>
+                <path
+                  d="M50.4707 40.4267L36.5976 41.6184C34.9952 41.7561 33.8079 43.1666 33.9455 44.7689L35.1373 58.6421C35.275 60.2444 36.6855 61.4318 38.2878 61.2941L52.161 60.1023C53.7633 59.9647 54.9507 58.5542 54.813 56.9518L53.6212 43.0787C53.4836 41.4764 52.073 40.289 50.4707 40.4267Z"
+                  fill="#FF9685"
+                ></path>
+                <path
+                  d="M19.9968 45.0088C19.5945 45.0088 19.1922 44.9494 18.7991 44.826C17.7751 44.506 16.9386 43.8066 16.4357 42.8603L9.96274 30.5314C9.46446 29.5806 9.36389 28.4926 9.68388 27.4686C10.0039 26.4446 10.7033 25.6081 11.6495 25.1098L23.9784 18.6368C24.9293 18.1385 26.0127 18.038 27.0366 18.358C28.0606 18.6779 28.8972 19.3774 29.4 20.3236L35.873 32.6525C36.3713 33.6033 36.4719 34.6913 36.1519 35.7153C35.8319 36.7393 35.1325 37.5758 34.1862 38.0741L21.8573 44.5471C21.2722 44.8534 20.6368 45.0088 19.9968 45.0088ZM25.8481 20.3831C25.5601 20.3831 25.2721 20.4516 25.007 20.5933L12.6781 27.0663C12.2484 27.2903 11.9376 27.6698 11.7913 28.1315C11.6496 28.5932 11.6907 29.0823 11.9147 29.512L18.3877 41.8409C18.6117 42.2706 18.9911 42.5814 19.4528 42.7277C19.9145 42.8694 20.4037 42.8283 20.8334 42.6043L33.1622 36.1313C34.0445 35.665 34.3873 34.5725 33.9211 33.6902L27.4481 21.3613C27.2241 20.9316 26.8447 20.6208 26.383 20.4745C26.2047 20.4196 26.0218 20.3922 25.8435 20.3922L25.8481 20.3831Z"
+                  fill="#FFEFEC"
+                ></path>
+                <path
+                  d="M58.6886 38.8239C58.2498 38.8239 57.8109 38.7508 57.3858 38.6045L44.2112 34.1017C43.1964 33.7543 42.3781 33.032 41.9027 32.0721C41.4319 31.1075 41.3633 30.0195 41.7062 29.0047L46.2089 15.8301C46.9266 13.7365 49.2123 12.6165 51.306 13.3296L64.4805 17.8324C66.5742 18.5455 67.6987 20.8357 66.981 22.9294L62.4783 36.104C62.1309 37.1188 61.4086 37.9371 60.4486 38.4079C59.8909 38.6822 59.2875 38.8193 58.6841 38.8193L58.6886 38.8239ZM50.0168 15.3227C49.2626 15.3227 48.5586 15.7981 48.3026 16.5478L43.7998 29.7224C43.6444 30.1795 43.6764 30.6687 43.8867 31.1029C44.1015 31.5372 44.4672 31.8618 44.9244 32.0172L58.0989 36.52C58.5561 36.6754 59.0452 36.6434 59.4795 36.4331C59.9138 36.2183 60.2383 35.8526 60.3938 35.3954L64.8965 22.2209C65.2211 21.2792 64.7136 20.246 63.7719 19.926L50.5974 15.4233C50.4054 15.3593 50.2088 15.3273 50.0123 15.3273L50.0168 15.3227Z"
+                  fill="#FFEFEC"
+                ></path>
               </svg>
             </div>
-            <div class="mt-3">
-              <p class="mt-1 text-gray-200 text-sm font-semibold">
+            <div className="mt-3">
+              <p className="mt-1 text-gray-200 text-sm font-semibold">
                 Replaces Up To 90% Of Suger
               </p>
             </div>
           </div>
 
-          <div class="text-center">
-            <div class="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto">
+          <div className="text-center">
+            <div className="flex justify-center items-center size-18 mx-auto">
               <svg
-                class="shrink-0 size-5 text-gray-600"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
+                width="75"
+                height="75"
+                viewBox="0 0 75 75"
                 fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <rect width="10" height="14" x="3" y="8" rx="2" />
-                <path d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4" />
-                <path d="M8 18h.01" />
+                <path
+                  d="M65.9097 24.7513C66.8538 24.7513 67.6192 23.9859 67.6192 23.0418C67.6192 22.0977 66.8538 21.3323 65.9097 21.3323C64.9656 21.3323 64.2002 22.0977 64.2002 23.0418C64.2002 23.9859 64.9656 24.7513 65.9097 24.7513Z"
+                  fill="#FFEFEC"
+                ></path>
+                <path
+                  d="M57.9044 27.8047L51.7886 22.8362C48.6027 29.7199 43.3599 35.2964 36.9561 38.9257L43.9175 44.8724C48.6301 48.7348 55.5824 48.0446 59.4448 43.332C63.3072 38.6195 62.617 31.6671 57.9044 27.8047Z"
+                  fill="#FF9685"
+                ></path>
+                <path
+                  d="M55.7092 19.8789C57.3273 19.8789 58.4609 19.5635 58.5706 19.5315L57.9581 17.4106C57.9032 17.4289 52.3496 18.9693 48.6015 14.2292L46.8691 15.5959C48.1489 17.2186 49.5888 18.2471 51.0103 18.8916C46.3114 32.3437 33.5815 41.3758 19.3249 41.3758C15.4808 41.3758 11.7098 40.7313 8.12166 39.4606L7.38574 41.5403C11.2116 42.8933 15.2294 43.5835 19.3249 43.5835C29.1523 43.5835 38.2941 39.552 44.8807 32.8328L52.441 39.0263L53.8397 37.3214L46.38 31.2101C49.2779 27.8642 51.5862 23.947 53.1038 19.6C54.0454 19.8103 54.9321 19.8834 55.7092 19.8834V19.8789Z"
+                  fill="#FFEFEC"
+                ></path>
+                <path
+                  d="M33.1989 60.9849C33.08 60.9849 32.9612 60.9758 32.8423 60.9575C32.2024 60.8615 31.6402 60.5278 31.2562 60.0068L27.3344 54.7274C26.5391 53.6624 26.2237 52.2957 26.4568 50.9884C26.6945 49.6583 27.4533 48.5247 28.5914 47.7888C30.5158 46.5455 33.0572 46.8837 34.6753 48.5064C36.6956 47.4231 39.2279 47.8299 40.7088 49.576C41.5865 50.609 41.9841 51.9163 41.8287 53.2556C41.6779 54.5765 40.9785 55.7878 39.9089 56.5832L34.6296 60.505C34.209 60.8158 33.7108 60.9804 33.1943 60.9804L33.1989 60.9849ZM31.1557 49.2423C30.6803 49.2423 30.2049 49.3703 29.789 49.6446C29.1719 50.0468 28.756 50.6639 28.628 51.3861C28.4954 52.1083 28.6646 52.8305 29.1034 53.4155L33.0252 58.6949C33.0663 58.7543 33.1212 58.7726 33.1623 58.7772C33.1989 58.7818 33.2583 58.7772 33.3177 58.7406L38.5971 54.8188C39.1867 54.38 39.557 53.7401 39.6393 53.0087C39.7215 52.282 39.5067 51.5689 39.0268 51.0067C38.1354 49.9599 36.5265 49.8137 35.3655 50.6821L34.2365 51.5232L33.3954 50.3896C32.8423 49.6491 32.0013 49.2469 31.1603 49.2469L31.1557 49.2423Z"
+                  fill="#FFEFEC"
+                ></path>
               </svg>
             </div>
-            <div class="mt-3">
-              <p class="mt-1 text-gray-200 text-sm font-semibold">
-                Rehabilitates Sweet Treats
+            <div className="mt-3">
+              <p className="mt-1 text-gray-200 text-sm font-semibold">
+                Rehabilitates Sweet
+                <br /> Treats
               </p>
             </div>
           </div>
 
-          <div class="text-center">
-            <div class="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto">
+          <div className="text-center">
+            <div className="flex justify-center items-center size-18 mx-auto">
               <svg
-                class="shrink-0 size-5 text-gray-600"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
+                width="76"
+                height="75"
+                viewBox="0 0 76 75"
                 fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <rect width="10" height="14" x="3" y="8" rx="2" />
-                <path d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4" />
-                <path d="M8 18h.01" />
+                <path
+                  d="M16.2301 14H14.0221C14.0221 17.0445 11.5445 19.5222 8.5 19.5222V21.7301C11.5445 21.7301 14.0221 24.2078 14.0221 27.2523H16.2301C16.2301 24.2078 18.7078 21.7301 21.7523 21.7301V19.5222C18.7078 19.5222 16.2301 17.0445 16.2301 14ZM15.1284 23.2935C14.4702 22.201 13.5559 21.2821 12.4633 20.6284C13.5559 19.9702 14.4747 19.0559 15.1284 17.9633C15.7867 19.0559 16.7009 19.9747 17.7935 20.6284C16.7009 21.2867 15.7821 22.201 15.1284 23.2935Z"
+                  fill="#FFEFEC"
+                ></path>
+                <path
+                  d="M65.8161 43.6493C66.7604 43.6493 67.5258 42.8839 67.5258 41.9397C67.5258 40.9954 66.7604 40.23 65.8161 40.23C64.8719 40.23 64.1064 40.9954 64.1064 41.9397C64.1064 42.8839 64.8719 43.6493 65.8161 43.6493Z"
+                  fill="#FFEFEC"
+                ></path>
+                <path
+                  d="M56.1929 26.0956C51.6398 21.9266 44.1063 22.3563 39.7452 26.7219L39.0367 27.4305L38.3281 26.7219C33.9625 22.3563 26.4335 21.9266 21.8805 26.0956C16.9251 30.635 16.7972 38.3331 21.4965 43.0324L37.1076 58.6435C38.1727 59.7086 39.9006 59.7086 40.9658 58.6435L55.6077 44.0015L56.5769 43.0324C61.2762 38.3331 61.1482 30.6304 56.1929 26.0956Z"
+                  fill="#FF9685"
+                ></path>
+                <path
+                  d="M52.0974 37.7163H49.8894C49.8894 43.3985 45.2632 48.0247 39.5811 48.0247V50.2326C45.2632 50.2326 49.8894 54.8588 49.8894 60.541H52.0974C52.0974 54.8588 56.719 50.2326 62.4057 50.2326V48.0247C56.7235 48.0247 52.0974 43.3985 52.0974 37.7163ZM50.9956 55.4119C49.7385 52.628 47.494 50.3835 44.7146 49.1309C47.4986 47.8738 49.7431 45.6293 50.9956 42.8453C52.2528 45.6293 54.4973 47.8738 57.2767 49.1309C54.4927 50.388 52.2482 52.6326 50.9956 55.4119Z"
+                  fill="#FFEFEC"
+                ></path>
               </svg>
             </div>
-            <div class="mt-3">
-              <p class="mt-1 text-gray-200 text-sm font-semibold">
-                Helps Stabilize Blood Sugar
+            <div className="mt-3">
+              <p className="mt-1 text-gray-200 text-sm font-semibold">
+                Helps Stabilize Blood
+                <br /> Sugar
               </p>
             </div>
           </div>
@@ -101,7 +131,7 @@ export default function Hero() {
 
       <svg
         preserveAspectRatio="none"
-        class="absolute z-20 bottom-0 left-0 max-h-[180px] lg:max-h-[230px]"
+        className="absolute z-20 bottom-0 left-0 max-h-[180px] lg:max-h-[230px]"
         width="100%"
         height="auto"
         viewBox="0 0 375 59"
@@ -128,8 +158,12 @@ export default function Hero() {
         </defs>
       </svg>
 
-      <div class="relative max-w-[432px] mx-auto z-0">
-        <Image src={cocoa} alt="Cocoa Dreams" className="bottom-0 ml-20" />
+      <div className="relative max-w-[432px] mx-auto z-0">
+        <Image
+          src={heroProduct}
+          alt="Cocoa Dreams"
+          className="bottom-0 ml-20"
+        />
       </div>
     </section>
   );

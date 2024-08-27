@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Button from "./Button";
 
 const tabs = [
   {
@@ -34,16 +35,17 @@ export default function Slider() {
   };
 
   return (
-    <section className="w-full bg-[#040454] py-[75px] px-[3rem]">
+    <section className="w-full bg-[#040454] pt-[75px] px-[3rem]">
       <div>
         <nav
-          class="-mb-0.5 flex justify-center gap-x-6"
+          className="-mb-0.5 flex justify-center gap-x-6"
           aria-label="Tabs"
           role="tablist"
           aria-orientation="horizontal"
         >
           {tabs.map((tab, index) => (
             <button
+              key={index}
               type="button"
               className={`text-3xl hs-tab-active:font-semibold hs-tab-active:border-gray-200 hs-tab-active:text-gray-200 py-2 px-1 inline-flex items-center gap-x-2 border-b-4 border-transparent whitespace-nowrap text-gray-500 hover:text-gray-200 focus:outline-none focus:text-gray-200 disabled:opacity-50 disabled:pointer-events-none ${
                 activeTab === index ? "active" : ""
@@ -79,6 +81,10 @@ export default function Slider() {
             </ul>
           </div>
         ))}
+      </div>
+
+      <div className="flex justify-center mt-8 mb-8">
+        <Button text={"Shop All"} />
       </div>
     </section>
   );

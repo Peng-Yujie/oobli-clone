@@ -1,6 +1,10 @@
-export default function Divider() {
+export default function Divider({ direction = "up" }) {
   return (
-    <section className="w-full relative">
+    <section
+      className={`w-full relative ${
+        direction === "up" ? "" : "transform rotate-180"
+      }`}
+    >
       <svg
         width="100%"
         height="auto"

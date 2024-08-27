@@ -5,7 +5,7 @@ import Button from "./Button";
 
 export default function Facts() {
   return (
-    <section class="w-full bg-[#ffefec] py-[75px] px-[3rem] flex flex-col gap-28">
+    <section className="w-full bg-[#ffefec] py-[75px] px-[3rem] flex flex-col gap-28">
       <div className="grid grid-flow-row lg:grid-flow-col items-center">
         <Image src={ProductFact} alt="Product facts" />
         <div className="flex flex-row gap-6 mx-[115px] max-w-md items-center">

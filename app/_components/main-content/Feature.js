@@ -29,7 +29,7 @@ export default function Feature() {
           </p>
           <Button text="See the Science" />
         </div>
-        <div class="grid grid-cols-3 items-center gap-12 mx-auto max-w-2xl">
+        <div className="grid grid-cols-3 items-center gap-12 mx-auto max-w-2xl">
           {bullets.map((bullet, index) => (
             <Bullet key={index} text={bullet.text} textColor="text-blue-950" />
           ))}

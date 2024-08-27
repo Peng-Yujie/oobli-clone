@@ -2,6 +2,7 @@ import "@/app/_styles/globals.css";
 import PrelineScript from "./_components/PrelineScript";
 import Announcement from "./_components/Announcement";
 import Header from "./_components/Header";
+import Footer from "./_components/Footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <Announcement />
         <Header />
         {children}
+        <Footer />
       </body>
       <PrelineScript />
     </html>

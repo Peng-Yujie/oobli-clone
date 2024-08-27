@@ -1,11 +1,11 @@
-import Banner from "./_components/main-content/Banner";
-import Benefits from "./_components/main-content/Benefits";
-import Divider from "./_components/main-content/Divider";
-import Facts from "./_components/main-content/Facts";
-import Feature from "./_components/main-content/Feature";
-import Feedback from "./_components/main-content/Feedback";
-import Hero from "./_components/main-content/Hero";
-import Slider from "./_components/main-content/Slider";
+import Banner from "@/app/_components/main-content/Banner";
+import Benefits from "@/app/_components/main-content/Benefits";
+import Divider from "@/app/_components/main-content/Divider";
+import Facts from "@/app/_components/main-content/Facts";
+import Feature from "@/app/_components/main-content/Feature";
+import Feedback from "@/app/_components/main-content/Feedback";
+import Hero from "@/app/_components/main-content/Hero";
+import Slider from "@/app/_components/main-content/Slider";
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
       <Benefits />
       <Banner />
       <Feedback />
+      <Divider direction="down" />
     </main>
   );
 }
