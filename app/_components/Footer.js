@@ -4,9 +4,9 @@ import logo from "@/public/Oobli_Logo_87a11e5d-0cf5-438f-8342-514310177448.png";
 export default function Footer() {
   return (
     <footer className="bg-[#040454] text-gray-200 pt-12 px-12 -mt-2 flex flex-col gap-12 relative">
-      <div className="flex flex-col md:flex-row gap-4 justify-between">
+      <div className="flex flex-col md:flex-row gap-4 justify-between lg:mx-32">
         <div className="flex flex-col gap-4 items-center">
-          <h3 className="text-4xl font-bold">Stay in the loop</h3>
+          <h3 className="text-4xl lg:text-6xl font-bold">Stay in the loop</h3>
           <div class="w-full space-y-3">
             <input
               type="text"

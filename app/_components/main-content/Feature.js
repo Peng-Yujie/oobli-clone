@@ -15,7 +15,7 @@ const bullets = [
 
 export default function Feature() {
   return (
-    <section className="w-full bg-[#ffefec] py-[75px] px-[3rem]">
+    <section className="w-full bg-[#ffefec] py-[75px] px-[3rem] md:px-24 lg:px-48">
       <div className="grid lg:grid-cols-[1fr,2fr] gap-12">
         <div className="flex flex-col gap-4 items-start">
           <h1 className="text-4xl">

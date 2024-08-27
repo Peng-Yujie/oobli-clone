@@ -2,11 +2,11 @@ import { ShoppingCartIcon } from "@heroicons/react/20/solid";
 
 export default function Header() {
   return (
-    <header className="py-3 bg-blue-950 w-full px-6">
-      <div className="rounded-full flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-[#ffefec] h-16">
+    <header className="py-3 bg-blue-950 w-full px-6 md:px-24 lg:px-48">
+      <div className="rounded-full flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-[#ffefec] h-16 px-6">
         <nav className="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
           <a
-            className="sm:order-1 flex-none text-xl font-semibold focus:outline-none focus:opacity-80"
+            className="sm:order-1 flex-none text-2xl md:text-4xl lg:text-5xl font-bold focus:outline-none focus:opacity-80"
             href="#"
           >
             Oobli

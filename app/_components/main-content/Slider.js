@@ -35,7 +35,7 @@ export default function Slider() {
   };
 
   return (
-    <section className="w-full bg-[#040454] pt-[75px] px-[3rem]">
+    <section className="w-full bg-[#040454] pt-[75px] px-[3rem] md:px-24 lg:px-48">
       <div>
         <nav
           className="-mb-0.5 flex justify-center gap-x-6"
